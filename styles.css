@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #1F2937;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -163,4 +167,120 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 20px 8%;
+    }
+
+    .main-header {
+        gap: 24px;
+    }
+
+    .main-header h2 {
+        font-size: 40px;
+    }
+
+    .first-section {
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 0 24px;
+    }
+
+    .citation {
+        height: auto;
+        max-height: none;
+        padding: 40px 24px;
+        font-size: 30px;
+    }
+
+    .cta {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 16px;
+    }
+
+    .navigation {
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 8px 5px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 0 16px;
+    }
+
+    .main-header h2 {
+        font-size: 36px;
+    }
+
+    .main-header br {
+        display: none;
+    }
+
+    .image-header {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    main > section:first-child h2 {
+        margin: 36px 16px 24px;
+    }
+
+    .first-section {
+        gap: 32px;
+        padding: 0 16px;
+    }
+
+    .main-image {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .main-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .citation {
+        margin: 48px 0;
+        padding: 32px 16px;
+        font-size: 24px;
+    }
+
+    .citation p {
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    .cta {
+        width: auto;
+        margin: 0 16px 48px;
+        padding: 12px 16px;
+        gap: 8px;
+    }
+
+    .cta-msg {
+        font-size: 18px;
+    }
 }
